@@ -1,0 +1,35 @@
+@if(open){
+<main>
+  <aside [appAnimate]="animation" (animationEnd)="onAnimationEnd()">
+    <div class="close">
+      <i (click)="closeSidebar()" class="pi pi-times"></i>
+    </div>
+    @for (item of items; track $index) {
+    <section>
+      <a
+        (click)="expandLabel($index)"
+        (click)="router.navigateByUrl(item.link)"
+        >{{ item.label }}</a
+      >
+
+      @if (item.children.length) {
+      <i (click)="expandLabel($index)" class="pi pi-chevron-down"></i>
+      }
+    </section>
+
+    @if (expanded === $index) {
+    <ul appAnimate="slide-down">
+      @for (child of item.children; track $index) {
+      <li>
+        <a (click)="router.navigateByUrl(child.link)">{{ child.label }}</a>
+      </li>
+      }
+    </ul>
+    } }
+    <ng-content select="[teste]"></ng-content>
+  </aside>
+  <div (click)="closeSidebar()" class="content">
+    <ng-content> </ng-content>
+  </div>
+</main>
+}

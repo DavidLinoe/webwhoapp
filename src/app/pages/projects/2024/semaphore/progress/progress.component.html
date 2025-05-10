@@ -1,0 +1,16 @@
+<div class="roadmap-container">
+  <h2>Roadmap de Desenvolvimento</h2>
+  
+  <!-- Barra de progresso -->
+  <div class="progress-bar">
+    <div class="progress" [style.width.%]="progress"></div>
+  </div>
+
+  <!-- Etapas do Roadmap -->
+  <div class="steps">
+    <div *ngFor="let step of steps" class="step">
+      <div class="step-name" [class.completed]="step.completed">{{ step.name }}</div>
+      <p class="step-description">{{ step.description }}</p>
+    </div>
+  </div>
+</div>

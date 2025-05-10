@@ -1,0 +1,45 @@
+.container {
+  color: var(--primary-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  background-color: var(--primary-color-dark);
+  width: 700px;
+  border-radius: 20px;
+  animation: entry 0.4s backwards;
+  transition: all 0.2s ease;
+}
+
+.container:hover {
+  transform: scale(1.1);
+}
+
+a {
+  font-family: "Poppins";
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+a:hover {
+  transition: color 0.7s;
+  color: var(--primary-color-light);
+}
+
+.section {
+  gap: 30px;
+  padding: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 700px;
+}
+
+.section img {
+  border-radius: 20px;
+  width: 300px;
+  max-height: 200px;
+}

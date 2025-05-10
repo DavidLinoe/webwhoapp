@@ -1,0 +1,152 @@
+<div class="container">
+
+  <div class="semaforo">
+
+    <div class="section">
+      <canvas #semaforoCanvas1 width="100" height="300"
+        style="background-color: rgb(158, 158, 158); border-radius: 10px;"></canvas>
+      <button (click)="ligarDesligar(1)">Ligar/Desligar Semáforo</button>
+    </div>
+
+    <div class="section">
+
+      <canvas #semaforoCanvas2 width="100" height="300"
+        style="background-color: rgb(158, 158, 158); border-radius: 10px;"></canvas>
+      <button (click)="ligarDesligar(2)">Ligar/Desligar Semáforo</button>
+    </div>
+
+    <div class="section">
+
+      <canvas #semaforoCanvas3 width="100" height="300"
+        style="background-color: rgb(158, 158, 158); border-radius: 10px;"></canvas>
+      <button (click)="ligarDesligar(3)">Ligar/Desligar Semáforo</button>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="aside">
+  <div class="frame">
+    <div class="image">
+      <iframe src="http://192.168.93.252:8080/video" frameborder="0"></iframe>
+    </div>
+    <div class="text">
+      <h1>Camera 1 - Semáforo 1</h1>
+      <div class="insights">
+        <div class="veiculos">
+          <label for="veiculos">Veiculos</label>
+          <div class="box">
+            {{dashForm1.value.quantidade}}
+          </div>
+        </div>
+        <div class="prioridade">
+          <label for="prioridade">Prioridade</label>
+          <div class="box">
+            {{dashForm1.value.prioridade}}
+          </div>
+        </div>
+        <div class="proximoCiclo">
+          <label for="proximoCiclo">Proximo Ciclo</label>
+          <div class="box">
+            {{dashForm1.value.tempo_total}}
+          </div>
+        </div>
+        <div class="proximoSinal">
+          <label for="proximoSinal">Proximo Sinal</label>
+          <div class="box">
+            <p>Vermelho: {{dashForm1.value.tempo_vermelho}}</p>
+          </div>
+          <div class="box">
+            <p>Amarelo: {{dashForm1.value.tempo_amarelo}}</p>
+          </div>
+          <div class="box">
+            <p>Verde: {{dashForm1.value.tempo_verde}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="frame-2">
+    <div class="image">
+      <iframe src="http://192.168.93.174:8080/video" frameborder="0"></iframe>
+    </div>
+    <div class="text">
+      <h1>Camera 2 - Semáforo 2</h1>
+      <div class="insights">
+        <div class="veiculos">
+          <label for="veiculos">Veiculos</label>
+          <div class="box">
+            {{dashForm2.value.quantidade}}
+          </div>
+        </div>
+        <div class="prioridade">
+          <label for="prioridade">Prioridade</label>
+          <div class="box">
+            {{dashForm2.value.prioridade}}
+          </div>
+        </div>
+        <div class="proximoCiclo">
+          <label for="proximoCiclo">Proximo Ciclo</label>
+          <div class="box">
+            {{dashForm2.value.tempo_total}}
+          </div>
+        </div>
+        <div class="proximoSinal">
+          <label for="proximoSinal">Proximo Sinal</label>
+          <div class="box">
+            <p>Vermelho: {{dashForm2.value.tempo_vermelho}}</p>
+          </div>
+          <div class="box">
+            <p>Amarelo: {{dashForm2.value.tempo_amarelo}}</p>
+          </div>
+          <div class="box">
+            <p>Verde: {{dashForm2.value.tempo_verde}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="frame">
+    <div class="image">
+      <iframe src="http://192.168.93.72 :8080/video" frameborder="0"></iframe>
+    </div>
+    <div class="text">
+      <h1>Camera 3 - Semáforo 3</h1>
+      <div class="insights">
+        <div class="veiculos">
+          <label for="veiculos">Veiculos</label>
+          <div class="box">
+            {{dashForm3.value.quantidade}}
+          </div>
+        </div>
+        <div class="prioridade">
+          <label for="prioridade">Prioridade</label>
+          <div class="box">
+            {{dashForm3.value.prioridade}}
+          </div>
+        </div>
+        <div class="proximoCiclo">
+          <label for="proximoCiclo">Proximo Ciclo</label>
+          <div class="box">
+            {{dashForm3.value.tempo_total}}
+          </div>
+        </div>
+        <div class="proximoSinal">
+          <label for="proximoSinal">Proximo Sinal</label>
+          <div class="box">
+            <p>Vermelho: {{dashForm3.value.tempo_vermelho}}</p>
+          </div>
+          <div class="box">
+            <p>Amarelo: {{dashForm3.value.tempo_amarelo}}</p>
+          </div>
+          <div class="box">
+            <p>Verde: {{dashForm3.value.tempo_verde}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

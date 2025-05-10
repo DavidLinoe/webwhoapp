@@ -1,0 +1,13 @@
+<div class="container">
+  @for (item of items; track $index) {
+  <div class="profile">
+    <div class="image">
+      <img [src]="item.image" alt="" />
+      <div class="name">
+        <p>{{ item.name }}</p>
+      </div>
+      <a [href]="item.link" target="_blank">Portfólio</a>
+    </div>
+  </div>
+  }
+</div>

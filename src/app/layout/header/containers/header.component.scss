@@ -1,0 +1,37 @@
+main {
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+  display: flex;
+  justify-content: space-between;
+  min-height: 60px;
+  align-items: center;
+  padding-inline: 20px;
+}
+button {
+  font-size: 25px;
+  border-radius: 8px;
+}
+aside {
+    gap: 60px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 500px;
+  }
+a {
+  cursor: pointer;
+  font-family: "Poppins";
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+a:hover {
+  transition: color 0.7s;
+  color: color-mix(in srgb, var(--primary-text-color), black 10%);
+}
+.unimar {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+}

@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+flex-direction: column;}
+.code{
+    width: 1300px;
+}
+  
+  pre {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow-x: auto;
+  }
+  
+  h1 {
+    color: #ffffff;
+  }
+  

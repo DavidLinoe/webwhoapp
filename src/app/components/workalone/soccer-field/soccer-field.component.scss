@@ -1,0 +1,66 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+aside {
+  width: 270px;
+  height: 405px;
+  background-image: url(./../../../../assets/soccer_field.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--primary-text-color);
+}
+.player{
+    width: 30px;
+    height: 30px;
+    background-color: antiquewhite;
+    border-radius: 100%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+section {
+  display: flex;
+  gap: 30px;
+  padding: 16px;
+  flex-direction: row;
+}
+
+section a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  flex-grow: 1;
+}
+
+ul {
+  list-style: none;
+  padding-left: 20px;
+  margin: 5px 0;
+}
+
+ul li {
+  padding: 5px 0;
+}
+
+ul a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  display: block;
+  padding: 5px;
+}
+
+ul a:hover {
+  cursor: pointer;
+  background: var(--primary-color-light);
+  border-radius: 5px;
+}
+i {
+  cursor: pointer;
+}

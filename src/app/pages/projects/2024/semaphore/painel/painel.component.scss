@@ -1,0 +1,172 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.semaforo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+button{
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    color: #089d64;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.a{
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carros{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    color: aliceblue;
+}
+.aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  iframe {
+    width: 800px;
+    height: 600px;
+  }
+  
+  .frame {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background-color: #000;
+  }
+  
+  .frame-2 {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background-color: #000;
+  }
+  
+  .frame-3 {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 90%;
+    background-color: #000;
+  }
+  
+  .text {
+    width: 90%;
+    font-size: x-large;
+    text-align: justify;
+    padding: 40px;
+    color: #ffffff;
+  }
+  
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 100%;
+  }
+  
+  h1 {
+    text-shadow: 2px 2px 70px rgba(255, 255, 255, 0.195);
+    line-height: 150px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
+  
+  .h1 {
+    font-size: 200px;
+    color: #089d64;
+  }
+  
+  .h2 {
+    font-size: 128px;
+  
+    color: #7abf51;
+  }
+  
+  .insights {
+    background-color: #ffffff;
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-evenly;
+    // align-items: center;
+  }
+  
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #089d64;
+  }
+  
+  .veiculos {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+  
+  
+  }
+  
+  .prioridade {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+  
+  
+  }
+  
+  .proximoCiclo {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+  
+  
+  }
+  
+  .proximoSinal {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    color: #089d64;
+    font-weight: 700;
+  }

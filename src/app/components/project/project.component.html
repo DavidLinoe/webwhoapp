@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="section">
+        <img [src]="'../../../assets/images/'+image" alt="image">
+        <div>
+
+            <h1>{{title}}</h1>
+            <p>
+                <ng-content></ng-content>
+            </p>
+            <a [routerLink]="buttonLink">{{buttonText}}</a>
+        </div>
+    </div>
+
+</div>

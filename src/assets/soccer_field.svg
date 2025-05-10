@@ -1,0 +1,16 @@
+<svg width="1131" height="1697" viewBox="0 0 1131 1697" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1131" height="1697" fill="#078311"/>
+<rect x="21" y="845" width="1089" height="9" fill="#D9D9D9"/>
+<rect x="327" y="1452" width="495" height="9" fill="#D9D9D9"/>
+<rect x="318" y="1668" width="216" height="9" transform="rotate(-90 318 1668)" fill="#D9D9D9"/>
+<rect x="813" y="1668" width="216" height="9" transform="rotate(-90 813 1668)" fill="#D9D9D9"/>
+<rect width="495" height="9" transform="matrix(1 0 0 -1 323 242)" fill="#D9D9D9"/>
+<rect width="216" height="9" transform="matrix(0 1 1 0 314 26)" fill="#D9D9D9"/>
+<rect width="216" height="9" transform="matrix(0 1 1 0 809 26)" fill="#D9D9D9"/>
+<rect x="16" y="1677" width="1660" height="9" transform="rotate(-90 16 1677)" fill="#D9D9D9"/>
+<rect x="1105" y="1677" width="1655" height="9" transform="rotate(-90 1105 1677)" fill="#D9D9D9"/>
+<rect x="21" y="1668" width="1089" height="9" fill="#D9D9D9"/>
+<rect x="25" y="17" width="1089" height="9" fill="#D9D9D9"/>
+<circle cx="566" cy="850" r="152" stroke="white" stroke-width="10"/>
+<circle cx="566" cy="850" r="15" fill="white"/>
+</svg>

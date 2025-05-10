@@ -1,0 +1,32 @@
+<div wTooltip="{{ tooltip }}" class="input-wrapper {{ class }}">
+  @if (label) {
+  <label [attr.for]="label"
+    >{{ label }}
+    @if (required) {
+    <span class="required">*</span>
+    }
+  </label>
+  }
+  <div class="input-section">
+    <i class="input-icon" class="{{icon}}"></i>
+    <input
+    [wTooltip]="tooltip"
+    [type]="type"
+    [placeholder]="placeholder"
+    [formControl]="control"
+    [disabled]="disabled"
+    [required]="required"
+    [class.invalid]="control?.invalid && control?.touched"
+    />
+  </div>
+
+  @if (errorMessage ) {
+  <div class="error">
+    {{ errorMessage }}
+  </div>
+  } @if (helpText && !errorMessage && !errorText) {
+  <div class="help">
+    {{ helpText }}
+  </div>
+  }
+</div>

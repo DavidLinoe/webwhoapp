@@ -1,0 +1,18 @@
+<ng-container>
+  <main>
+    <button (click)="toggleNavbar = !toggleNavbar">
+      <i class="pi pi-bars"></i>
+    </button>
+    <a class="unimar" href="https://unimar.br/" target="_blank">
+      <img src="../../../assets/logo_unimar.png" width="150px" alt="logo-unimar" />
+    </a>
+    
+    <aside>
+      @for (label of labels; track $index) {
+        <a appAnimate="fade-in" (click)="router.navigateByUrl(label.link)">{{ label.name }}</a>
+      }
+    </aside>
+  </main>
+  
+  <app-sidebar [open]="toggleNavbar" (toggle)="toggleNavbar = false"></app-sidebar>
+</ng-container>
