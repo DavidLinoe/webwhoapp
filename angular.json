@@ -27,6 +27,7 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/assets",
+              "src/styles/w-utils.scss",
               "src/assets/**/*",
               {
                 "glob": "**/*",
@@ -95,6 +96,7 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/assets",
+              "src/styles/w-utils.scss",
               "src/assets/**/*",
               {
                 "glob": "**/*",

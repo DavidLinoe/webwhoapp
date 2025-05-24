@@ -1,18 +1,24 @@
+<section class="w-flex">
+  <div class="card w-flex w-flex-col w-gap-4">
+    <w-input
+      icon="pi pi-search"
+      tooltip="↓"
+      class="w-input"
+      label="Busque e Compare"
+      placeholder="Busque por um produto"
+      type="text"
+      [control]="form.get('product')"
+      errorText="Por favor, insira um e-mail válido"
+      helpText="Seu e-mail será usado para login."
+    />
 
-<w-input
-icon="pi pi-search"
-tooltip="↓"
-label="Busque e Compare"
-placeholder="Busque por um produto"
-type="text"
-[control]="form.get('email')"
-errorText="Por favor, insira um e-mail válido"
-helpText="Seu e-mail será usado para login."
-/>
+    <button (click)="print()">Buscar</button>
+    <app-data-view></app-data-view>
+  </div>
 
-<button (click)="print()">Buscar</button>
+  <section>
+    <app-chart></app-chart>
+  </section>
+</section>
 
-
-
-<app-chart></app-chart>
 <!-- <app-soccer-field></app-soccer-field> -->

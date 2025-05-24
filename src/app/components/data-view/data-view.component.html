@@ -1,0 +1,24 @@
+<div class="w-flex w-flex-col w-gap-4 ">
+  @for (item of items; track $index) {
+  <div class="w-flex w-flex-row w-gap-4    ">   
+    <div class="w-flex w-justify-evenly">    
+      <!-- <img [src]="item.image" alt="product" /> -->
+      <img src="../../../assets/images/profile/profile_lucas.jpg" alt="" />
+    </div>
+    <div class="w-flex w-flex-col w-justify-evenly">
+      <p class="">{{ item.category }}</p>
+
+      <h3>{{ item.name }}</h3>
+      <div>
+        @for (item of [].constructor(item.rating); track $index) {
+        <i class="pi pi-star"></i>
+        }
+      </div>
+    </div>
+    <div class="w-flex w-flex-col w-justify-end ">
+        <button class=""><i class="pi pi-search-plus"></i></button>
+    </div>
+</div>
+
+  }
+</div>

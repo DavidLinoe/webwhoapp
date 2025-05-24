@@ -1,0 +1,83 @@
+
+/* Layout */
+.w-block { display: block; }
+.w-inline { display: inline; }
+.w-inline-block { display: inline-block; }
+.w-flex { display: flex; }
+.w-grid { display: grid; }
+.w-none { display: none; }
+
+/* Flex */
+.w-flex-row { flex-direction: row; }
+.w-flex-col { flex-direction: column; }
+.w-justify-start { justify-content: start; }
+.w-justify-end { justify-content: end; }
+.w-justify-center { justify-content: center; }
+.w-justify-between { justify-content: space-between; }
+.w-justify-evenly { justify-content: space-evenly; }
+
+.w-items-center { align-items: center; }
+.w-items-start { align-items: flex-start; }
+.w-items-end { align-items: flex-end; }
+
+.w-gap-1 { gap: 0.25rem; }
+.w-gap-2 { gap: 0.5rem; }
+.w-gap-4 { gap: 1rem; }
+
+/* Grid */
+.w-grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.w-grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.w-grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+/* Margin */
+.w-m-1 { margin: 0.25rem; }
+.w-m-2 { margin: 0.5rem; }
+.w-m-4 { margin: 1rem; }
+.w-mt-2 { margin-top: 0.5rem; }
+.w-mb-2 { margin-bottom: 0.5rem; }
+.w-ml-2 { margin-left: 0.5rem; }
+.w-mr-2 { margin-right: 0.5rem; }
+
+/* Padding */
+.w-p-1 { padding: 0.25rem; }
+.w-p-2 { padding: 0.5rem; }
+.w-p-4 { padding: 1rem; }
+.w-pt-2 { padding-top: 0.5rem; }
+.w-pb-2 { padding-bottom: 0.5rem; }
+
+/* Width / Height */
+.w-w-full { width: 100%; }
+.w-h-full { height: 100%; }
+.w-w-screen { width: 100vw; }
+.w-h-screen { height: 100vh; }
+
+/* Colors - Background */
+.w-bg-white { background-color: #ffffff; }
+.w-bg-black { background-color: #000000; }
+.w-bg-gray-100 { background-color: #f3f4f6; }
+.w-bg-gray-800 { background-color: #1f2937; }
+.w-bg-blue-500 { background-color: #3b82f6; }
+.w-bg-red-500 { background-color: #ef4444; }
+
+/* Colors - Text */
+.w-text-white { color: #ffffff; }
+.w-text-black { color: #000000; }
+.w-text-gray-800 { color: #1f2937; }
+.w-text-blue-500 { color: #3b82f6; }
+.w-text-red-500 { color: #ef4444; }
+
+/* Extras */
+.w-rounded { border-radius: 0.25rem; }
+.w-rounded-full { border-radius: 9999px; }
+
+.w-shadow { box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); }
+
+.w-text-center { text-align: center; }
+.w-text-left { text-align: left; }
+.w-text-right { text-align: right; }
+
+.w-font-bold { font-weight: 700; }
+.w-font-medium { font-weight: 500; }
+.w-font-light { font-weight: 300; }
+
+.w-cursor-pointer { cursor: pointer; }
