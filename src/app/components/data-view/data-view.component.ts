@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ExcelExportService } from '../../services/excel-export.service';
 
 @Component({
   selector: 'app-data-view',
@@ -9,34 +10,15 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class DataViewComponent implements OnInit {
   @Input() public title: string = '';
+  @Input() public items: any = [];
+  constructor(private excelService: ExcelExportService) {}
 
   ngOnInit(): void {}
+  number(number: number) {
+    return Number(number);
+  }
+    public async exportProdutc(json:Record<string,any>[]){
+        this.excelService.exportAsExcelFile(json, 'funcionarios');
 
-  public items:any[] = [
-    {
-      name: 'Shoe 2',
-      rating: 5,
-      price: 3,
-      category: 'clothes',
-      stock: 234,
-      image:''
-    },
-    {
-      name: 'Sneaker 1',
-      rating: 2,
-      price: 45,
-      category: 'clothes',
-      stock: 14,
-      image:''
-    },
-    {
-      name: 'Sandal 3',
-      rating: 4,
-      price: 35,
-      category: 'clothes',
-      stock: 414,
-      image:''
-
-    },
-  ];
+  }
 }

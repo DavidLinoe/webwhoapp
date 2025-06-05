@@ -12,13 +12,14 @@
       helpText="Seu e-mail será usado para login."
     />
 
-    <button (click)="print()">Buscar</button>
-    <app-data-view></app-data-view>
+    <button (click)="search()">Buscar</button>
+    <app-data-view [items]="items"></app-data-view>
   </div>
 
   <section>
     <app-chart></app-chart>
   </section>
 </section>
+<app-metrics [produtos]="produtosMockados"></app-metrics>
 
 <!-- <app-soccer-field></app-soccer-field> -->

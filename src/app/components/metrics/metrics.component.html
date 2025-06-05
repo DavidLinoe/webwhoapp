@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="main-content">
+    <!-- Métricas e gráficos que já temos -->
+    <div class="metrics">
+      <div>Média de Preço: <strong>R$ {{ mediaPreco | number:'1.2-2' }}</strong></div>
+      <div>Média de Avaliação: <strong>{{ mediaAvaliacao | number:'1.2-2' }} ★</strong></div>
+      <div>Total no Estoque: <strong>{{ totalEstoque }}</strong></div>
+    </div>
+
+    <div class="melhores">
+      <h3>Melhor Custo-Benefício</h3>
+      <p><strong>{{ melhorCustoBeneficio?.name }}</strong> — {{ melhorCustoBeneficio?.ratingDescription }}</p>
+
+      <h3>Melhor Descrição</h3>
+      <p><strong>{{ melhorDescricao?.name }}</strong> — {{ melhorDescricao?.ratingDescription }}</p>
+
+      <h3>Top 3 Produtos (Avaliação)</h3>
+      <ol>
+        <li *ngFor="let p of top3Avaliacao">
+          {{ p.name }} — {{ p.rating }} ★ — R$ {{ p.price | number:'1.2-2' }}
+        </li>
+      </ol>
+    </div>
+
+    <ngx-charts-bar-vertical
+      [view]="view"
+      [scheme]="'vivid'"
+      [results]="produtosPorCategoria"
+      [gradient]="gradient"
+      [xAxis]="showXAxis"
+      [yAxis]="showYAxis"
+      [legend]="showLegend"
+      [showXAxisLabel]="showXAxisLabel"
+      [showYAxisLabel]="showYAxisLabel"
+      [xAxisLabel]="xAxisLabel"
+      [yAxisLabel]="yAxisLabel">
+    </ngx-charts-bar-vertical>
+  </div>
+
+  <aside class="sidebar" *ngIf="melhorCustoBeneficio">
+    <h2>Produto em Destaque</h2>
+    <div class="card">
+      <img [src]="melhorCustoBeneficio.images[0]" alt="{{ melhorCustoBeneficio.name }}" />
+      <h3>{{ melhorCustoBeneficio.name }}</h3>
+      <p class="subtitle">{{ melhorCustoBeneficio.subtitle }}</p>
+      <p class="rating">Avaliação: {{ melhorCustoBeneficio.rating }} ★</p>
+      <p class="price">Preço: R$ {{ melhorCustoBeneficio.price | number:'1.2-2' }}</p>
+      <p class="stock" [ngClass]="{'in-stock': melhorCustoBeneficio.stock.toLowerCase().includes('estoque'), 'out-stock': !melhorCustoBeneficio.stock.toLowerCase().includes('estoque')}">
+        {{ melhorCustoBeneficio.stock }}
+      </p>
+    </div>
+  </aside>
+</div>
